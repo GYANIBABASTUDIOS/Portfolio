@@ -10,18 +10,21 @@
     <header>
         <div class="logo">Your Name</div>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
         </nav>
     </header>
 
     <section id="hero">
-        <h1>Creative Game Developer</h1>
-        <p>Building immersive gaming experiences with Unity.</p>
-        <a href="#portfolio" class="btn">Explore My Work</a>
+        <div class="hero-content">
+            <h1 class="fade-in">Creative Game Developer</h1>
+            <p class="fade-in">Building immersive gaming experiences with Unity.</p>
+            <a href="#portfolio" class="btn fade-in">Explore My Work</a>
+        </div>
     </section>
 
     <section id="about">
@@ -64,5 +67,7 @@
     <footer>
         <p>&copy; 2024 Your Name. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
