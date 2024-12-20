@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Developer Portfolio</title>
+    <link rel="icon" href="GYANIBABASTUDIO.jpg" type="image/png">
+    <title >Game Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">Anshu Vats</div>
+        
+        <div class="logo"> <img id="pic" src="GYANIBABASTUDIO.jpg" alt="Logo">Anshu Vats</div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
         </nav>
     </header>
+
+    <div id="preloader">
+        <div class="loader-content">
+            <h1>Welcome to Gyani Baba Studios</h1>
+            <div class="spinner"></div>
+        </div>
+        <div class="curved-design">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+                <path d="M0,100 Q400,-100 800,100 T1600,100" fill="none" stroke="#ff5722" stroke-width="5"/>
+                <text x="50%" y="50%" text-anchor="middle" fill="#ff5722" font-size="40" font-family="Arial, sans-serif" dy=".3em">
+                    Gyani Baba Studios
+                </text>
+            </svg>
+        </div>
+    </div>
 
     <section id="hero">
         <div class="hero-content">
@@ -29,11 +46,12 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a passionate game developer specializing in Unity. I create engaging games with a focus on unique gameplay mechanics and stunning visuals.</p>
+        <p>I am a passionate game developer specializing in Unity. I create engaging games with a focus on unique gameplay mechanics and stunning visuals for mobile and computers.</p>
         <ul class="skills">
             <li>Unity</li>
             <li>C#</li>
             <li>3D/2D Game Development</li>
+            <li>Knowledge of: Java, C, C++, HTML, CSS, Android apps, and computer apps</li>
         </ul>
     </section>
 
@@ -41,30 +59,32 @@
         <h2>Portfolio</h2>
         <div class="projects">
             <div class="project">
-                <img src="game1.jpg" alt="Game 1">
-                <h3>Game Title 1</h3>
-                <p>Short description of the game. Highlight its unique features.</p>
-            </div>
-            <div class="project">
-                <img src="game2.jpg" alt="Game 2">
-                <h3>Game Title 2</h3>
-                <p>Short description of the game. Mention your role and tools used.</p>
+                <h1>$ Dead Car Racer <a href="https://play.google.com/store/apps/details?id=com.GYANIBABASTUDIOS.DEADCARRACER" style="color: green;">Download now</a></h1>
+                <img src="https://play-lh.googleusercontent.com/fO0V1PuzZY1q4rkhmkAfb9Wp5Z1B0wPFDAi1SWxlB8rf5cdTGCxuh9mwo_Q0zk30Jw=w240-h480-rw" alt="Dead Car Racer">
+                <b>
+                <p>1. This is a unique and impossible car stunt game.</p>
+                <p>2. You can play many levels after completing previous levels.</p>
+                <p>3. Play this game with 4 cars available now.</p>
+                <p>4. For older versions or other games, visit <a style="color: green;" href="https://gyanibaba-studios.itch.io/">Click here</a>.</p>
+                <h4>5. NOTE: <i style="color: red;">THIS GAME IS IN DEVELOPMENT.</i></h4>
+            </b>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form action="submit_form.php" method="post">
+        <form action="https://formspree.io/f/mpwzvngk" method="post">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             <button type="submit" class="btn">Send Message</button>
         </form>
+        
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>&copy; GYANIBABASTUDIOS 2024 All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>

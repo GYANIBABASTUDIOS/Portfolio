@@ -24,3 +24,10 @@ const observer = new IntersectionObserver(
 );
 
 fadeInElements.forEach(el => observer.observe(el));
+document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("preloader");
+    setTimeout(() => {
+        preloader.style.display = "none";
+    }, 3000); // Adjust the delay to match the animation timing
+});
+
