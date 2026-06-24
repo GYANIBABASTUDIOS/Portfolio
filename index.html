@@ -3,107 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="GYANIBABASTUDIO.jpg" type="image/png">
-    <title >Game Developer Portfolio</title>
+    <meta name="description" content="GBS portfolio for Unity games, mobile games, and interactive game development.">
+    <link rel="icon" href="GYANIBABASTUDIO.png" type="image/png">
+    <title>GBS | Game Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        
-        <div class="logo"> <img id="pic" src="GYANIBABASTUDIO.jpg" alt="Logo">Anshu Vats</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-        </nav>
-    </header>
-
-    <div id="preloader">
+    <div id="preloader" aria-hidden="true">
         <div class="loader-content">
-            <h1>Welcome to Gyani Baba Studios</h1>
+            <img src="GYANIBABASTUDIO.png" alt="" class="loader-logo">
+            <p>Loading Gyani Baba Studios</p>
             <div class="spinner"></div>
-        </div>
-        <div class="curved-design">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
-                <path d="M0,100 Q400,-100 800,100 T1600,100" fill="none" stroke="#ff5722" stroke-width="5"/>
-                <text x="50%" y="50%" text-anchor="middle" fill="#ff5722" font-size="40" font-family="Arial, sans-serif" dy=".3em">
-                    Gyani Baba Studios
-                </text>
-            </svg>
         </div>
     </div>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1 class="fade-in">Creative Game Developer</h1>
-            <p class="fade-in">Building immersive gaming experiences with Unity.</p>
-            <a href="#portfolio" class="btn fade-in">Explore My Work</a>
+    <header class="site-header">
+        <a class="brand" href="#hero" aria-label="GBS home">
+            <img id="pic" src="GYANIBABASTUDIO.png" alt="GBS logo">
+            <span>
+                <strong>GBS</strong>
+                <small>Gyani Baba Studios</small>
+            </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="#gbs">GBS</a></li>
+                <li><a href="#portfolio">Games</a></li>
+                <li><a href="#upcoming">Upcoming</a></li>
+                <li><a href="#studio">Studio</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </section>
+    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate game developer specializing in Unity. I create engaging games with a focus on unique gameplay mechanics and stunning visuals for mobile and computers.</p>
-        <ul class="skills">
-            <li>Unity</li>
-            <li>C#</li>
-            <li>3D/2D Game Development</li>
-            <li>Knowledge of: Java, C, C++, HTML, CSS, Android apps, and computer apps</li>
-        </ul>
-    </section>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-content">
+                <p class="eyebrow">Unity game developer and indie studio</p>
+                <h1>GBS is building fast, fun, player-first games.</h1>
+                <p class="hero-copy">
+                    Gyani Baba Studios creates arcade action, mobile challenges, and immersive levels with sharp gameplay,
+                    responsive controls, and a studio mindset focused on making every session exciting.
+                </p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="primary-btn">Explore games</a>
+                    <a href="#contact" class="ghost-btn hero-ghost">Start a project</a>
+                </div>
+                <div class="hero-stats" aria-label="Studio highlights">
+                    <article>
+                        <strong>Unity</strong>
+                        <span>Core engine</span>
+                    </article>
+                    <article>
+                        <strong>2D + 3D</strong>
+                        <span>Game worlds</span>
+                    </article>
+                    <article>
+                        <strong>Mobile</strong>
+                        <span>Android ready</span>
+                    </article>
+                </div>
+            </div>
+            <div class="hero-logo-card" aria-label="GBS logo">
+                <img src="GYANIBABASTUDIO.png" alt="Gyani Baba Studios logo">
+                <span>Gyani Baba Studios</span>
+            </div>
+        </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="projects">
-            <div class="project">
-                <h1>$ Dead Car Racer <a href="https://play.google.com/store/apps/details?id=com.GYANIBABASTUDIOS.DEADCARRACER" style="color: green;">Download now</a></h1>
-                <img src="https://play-lh.googleusercontent.com/fO0V1PuzZY1q4rkhmkAfb9Wp5Z1B0wPFDAi1SWxlB8rf5cdTGCxuh9mwo_Q0zk30Jw=w240-h480-rw" alt="Dead Car Racer">
-                <b>
-                <p>1. This is a unique and impossible car stunt game.</p>
-                <p>2. You can play many levels after completing previous levels.</p>
-                <p>3. Play this game with 4 cars available now.</p>
-                <p>4. For older versions or other games, visit <a style="color: green;" href="https://gyanibaba-studios.itch.io/">Click here</a>.</p>
-                <h4>5. NOTE: <i style="color: red;">THIS GAME IS IN DEVELOPMENT.</i></h4>
-            </b>
+        <section id="gbs" class="section gbs-section">
+            <div class="section-heading">
+                <p class="eyebrow">About GBS</p>
+                <h2>Gyani Baba Studios is made for energetic indie games.</h2>
+                <p>
+                    GBS focuses on Unity-powered mobile and computer games with clear goals, quick action,
+                    responsive controls, and memorable level designs. The studio keeps gameplay first and polish close behind.
+                </p>
             </div>
 
+            <div class="value-grid">
+                <article>
+                    <strong>Gameplay first</strong>
+                    <span>Every idea starts with the player feel, controls, challenge, and replay value.</span>
+                </article>
+                <article>
+                    <strong>Fast prototypes</strong>
+                    <span>GBS tests levels and mechanics quickly, then improves the parts that feel exciting.</span>
+                </article>
+                <article>
+                    <strong>Mobile focused</strong>
+                    <span>Games are built with touch controls, performance, and Android publishing in mind.</span>
+                </article>
+                <article>
+                    <strong>Best studio energy</strong>
+                    <span>GBS brings bold indie style, direct improvement, and a serious love for games.</span>
+                </article>
+            </div>
+        </section>
 
-            <div class="project">
-    <h1>$ Dhamaka Balloons 
-        <a href="https://play.google.com/store/apps/details?id=com.GyanibabaStudios.DhamakaBalloons" style="color: green;">
-            Download Now
-        </a>
-    </h1>
+        <section id="portfolio" class="section portfolio-section">
+            <div class="section-heading">
+                <p class="eyebrow">Featured releases</p>
+                <h2>GBS games are built to be simple to start and hard to stop.</h2>
+            </div>
 
-    <img src="https://play-lh.googleusercontent.com/ezGpLcZISZttqM0XZDUU2DyoZuayZDyl3GxaaYllARk4PYG7i4zr2YD-TZXau62eYg" alt="Dhamaka Balloons">
+            <div class="projects">
+                <article class="project-card featured-card">
+                    <div class="project-media">
+                        <img src="https://play-lh.googleusercontent.com/fO0V1PuzZY1q4rkhmkAfb9Wp5Z1B0wPFDAi1SWxlB8rf5cdTGCxuh9mwo_Q0zk30Jw=w240-h480-rw" alt="Dead Car Racer game artwork">
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Stunt racing</span>
+                        <h3>Dead Car Racer</h3>
+                        <p>
+                            A car stunt challenge with intense tracks, level progression, multiple cars, and a focus on
+                            timing, control, and replayable action.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Progressive levels</li>
+                            <li>Multiple cars</li>
+                            <li>Unity-powered physics</li>
+                        </ul>
+                        <a class="project-link" href="https://play.google.com/store/apps/details?id=com.GYANIBABASTUDIOS.DEADCARRACER" target="_blank" rel="noopener">Download on Google Play</a>
+                    </div>
+                </article>
 
-    <b>
-        <p>1. Dhamaka Balloons is a fun and exciting balloon popping game.</p>
-        <p>2. Pop as many balloons as possible before time runs out.</p>
-        <p>3. Complete levels to unlock new challenges and improve your score.</p>
-        <p>4. Test your speed and accuracy while enjoying colorful balloon explosions.</p>
-    </b>
-</div>
-        </div>
-    </section>
-    
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="https://play-lh.googleusercontent.com/ezGpLcZISZttqM0XZDUU2DyoZuayZDyl3GxaaYllARk4PYG7i4zr2YD-TZXau62eYg" alt="Dhamaka Balloons game artwork">
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Arcade reflex</span>
+                        <h3>Dhamaka Balloons</h3>
+                        <p>
+                            A bright balloon popping game built around speed, accuracy, score chasing, and quick challenge loops.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Fast sessions</li>
+                            <li>Colorful effects</li>
+                            <li>Score pressure</li>
+                        </ul>
+                        <a class="project-link" href="https://play.google.com/store/apps/details?id=com.GyanibabaStudios.DhamakaBalloons" target="_blank" rel="noopener">Download on Google Play</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/mpwzvngk" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        
-    </section>
+        <section id="upcoming" class="section upcoming-section">
+            <div class="section-heading">
+                <p class="eyebrow">Coming next</p>
+                <h2>Upcoming games from GBS.</h2>
+                <p>
+                    New projects are in development with darker stories, classic action, and the same fast gameplay focus
+                    that powers the studio.
+                </p>
+            </div>
 
-    <footer>
-        <p>&copy; GYANIBABASTUDIOS 2024 All Rights Reserved.</p>
+            <div class="upcoming-grid">
+                <article class="upcoming-card horror-card">
+                    <div class="upcoming-header">
+                        <span class="project-tag">Upcoming horror racer</span>
+                        <h3>Dead Car Racer : Horror Story</h3>
+                        <p>
+                            A darker Dead Car Racer experience with night roads, creepy locations, tense driving,
+                            and story-based racing challenges.
+                        </p>
+                    </div>
+                    
+                    <div class="game-carousel" data-carousel aria-label="Dead Car Racer Horror Story upcoming screenshots">
+                        <button class="carousel-btn prev" type="button" data-carousel-prev aria-label="Previous horror game image">&lt;</button>
+                        <div class="carousel-viewport">
+                            <div class="carousel-track">
+                                <figure class="carousel-slide">
+                                    <img src="pic1.jpg" alt="Dead Car Racer Horror Story screenshot 1">
+                                </figure>
+                                <figure class="carousel-slide">
+                                    <img src="pic2.jpg" alt="Dead Car Racer Horror Story screenshot 2">
+                                </figure>
+                                <figure class="carousel-slide">
+                                    <img src="pic3.jpg" alt="Dead Car Racer Horror Story screenshot 3">
+                                </figure>
+                                <figure class="carousel-slide">
+                                    <img src="pic4.jpg" alt="Dead Car Racer Horror Story screenshot 4">
+                                </figure>
+                                <figure class="carousel-slide">
+                                    <img src="pic5.jpg" alt="Dead Car Racer Horror Story screenshot 5">
+                                </figure>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" type="button" data-carousel-next aria-label="Next horror game image">&gt;</button>
+                        <div class="carousel-dots" aria-label="Horror game image selector"></div>
+                    </div>
+                </article>
+                
+            </div>
+                <div class="upcoming-grid">
+                <article class="upcoming-card retro-card">
+                    <div class="upcoming-header">
+                        <span class="project-tag">Upcoming retro action</span>
+                        <h3>Free Fire India : Old 2017</h3>
+                        <p>
+                            A retro-style action game concept built around old 2017 mobile shooter energy,
+                            quick survival moments, and simple high-action gameplay.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Classic feel</li>
+                            <li>Fast matches</li>
+                            <li>Mobile focused</li>
+                        </ul>
+                    </div>
+
+                    <div class="game-carousel" data-carousel aria-label="Free Fire India Old 2017 upcoming screenshots">
+                        <button class="carousel-btn prev" type="button" data-carousel-prev aria-label="Previous Free Fire India image">&lt;</button>
+                        <div class="carousel-viewport">
+                            <div class="carousel-track">
+                                <figure class="carousel-slide">
+                                    <img src="pic1.png" alt="Free Fire India Old 2017 screenshot 1">
+                                </figure>
+                                <figure class="carousel-slide slide-placeholder">
+                                    <span>Image 2</span>
+                                    <small>Add screenshot</small>
+                                </figure>
+                                <figure class="carousel-slide slide-placeholder">
+                                    <span>Image 3</span>
+                                    <small>Add screenshot</small>
+                                </figure>
+                                <figure class="carousel-slide slide-placeholder">
+                                    <span>Image 4</span>
+                                    <small>Add screenshot</small>
+                                </figure>
+                                <figure class="carousel-slide slide-placeholder">
+                                    <span>Image 5</span>
+                                    <small>Add screenshot</small>
+                                </figure>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" type="button" data-carousel-next aria-label="Next Free Fire India image">&gt;</button>
+                        <div class="carousel-dots" aria-label="Free Fire India image selector"></div>
+                    </div>
+                </article>
+                </div>
+        </section>
+
+        <section id="studio" class="section studio-section">
+            <div class="section-heading">
+                <p class="eyebrow">Why GBS</p>
+                <h2>GBS is the best gaming studio for focused indie energy.</h2>
+                <p>
+                    The studio keeps the work lean: design the fun first, test the feel, improve the levels, polish the UI,
+                    and ship games that players can understand instantly.
+                </p>
+            </div>
+
+            <div class="studio-grid">
+                <article class="studio-card">
+                    <img src="worldbuilding.png" alt="Mountain game environment">
+                    <h3>World building</h3>
+                    <p>Stylized environments for racing, adventure, and arcade gameplay.</p>
+                </article>
+                <article class="studio-card">
+                    <img src="level-design.png" alt="Desert game environment">
+                    <h3>Level design</h3>
+                    <p>Clear goals, readable paths, and challenge curves that keep players moving.</p>
+                </article>
+                <article class="studio-card">
+                    <img src="player-feel.png" alt="Snow game environment">
+                    <h3>Player feel</h3>
+                    <p>Controls, timing, feedback, and effects tuned for satisfying mobile play.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="contact-panel">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Want a game, prototype, or collaboration?</h2>
+                    <p>Send a message to GBS and share what you want to build.</p>
+                </div>
+                <form action="https://formspree.io/f/mpwzvngk" method="post">
+                    <label>
+                        <span>Your name</span>
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                    </label>
+                    <label>
+                        <span>Your email</span>
+                        <input type="email" name="email" placeholder="name@example.com" required>
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea name="message" placeholder="Tell me about your game idea" rows="5" required></textarea>
+                    </label>
+                    <button type="submit" class="primary-btn">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 GYANIBABASTUDIOS. All rights reserved.</p>
+        <a href="#hero">Back to top</a>
     </footer>
 
     <script src="script.js"></script>
